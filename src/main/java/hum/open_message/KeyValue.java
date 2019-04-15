@@ -8,7 +8,7 @@ import java.util.Set;
 public interface KeyValue {
     KeyValue put(String key, String value);
 
-    String getString(String store_path);
+    String getString(String key);
 
     Set<String> keySet();
 }

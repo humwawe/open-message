@@ -42,6 +42,7 @@ public class BufferService {
         }
 
         // Allocating next buffer (size == BUFFER_SIZE)
+        // 取了一半一半，使得分配空间比较接近整块
         final int droppedPages = position >> 12;
         final int newPosition = position & 0xfff;
         mappedFile.currentMapStart += droppedPages << 12;

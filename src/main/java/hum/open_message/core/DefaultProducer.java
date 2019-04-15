@@ -42,7 +42,6 @@ public class DefaultProducer implements Producer {
 
     @Override
     public BytesMessage createBytesMessageToTopic(String topic, byte[] body) {
-        System.out.println("cant access here");
         return messageFactory.createBytesMessageToTopic(topic, body);
     }
 
